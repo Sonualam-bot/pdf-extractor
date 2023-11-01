@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node server.js",
+    "install-client": "cd pdf-extractor && npm install",
+    "build-client": "cd pdf-extractor && npm run build",
+    "start-client": "cd pdf-extractor && npm run start"
   },
   "keywords": [],
   "author": "",
