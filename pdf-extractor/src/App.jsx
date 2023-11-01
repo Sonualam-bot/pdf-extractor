@@ -160,6 +160,21 @@ function App() {
     alignItems: "center",
   };
 
+  const footerStyle = {
+    color: "#fff",
+    textAlign: "center",
+    padding: "10px 0px",
+    position: "fixed",
+    bottom: "0",
+    width: "100%",
+  };
+
+  const anchorStyle = {
+    fontSize: "1.4rem",
+    textDecoration: "none",
+    color: "black",
+  };
+
   useEffect(() => {
     setNumPages(null); // Reset the number of pages when a new file is chosen
   }, [pdfURL]);
@@ -194,6 +209,11 @@ function App() {
             </Document>
           </div>
         )}
+      </div>
+      <div style={footerStyle}>
+        <a style={anchorStyle} href="https://github.com/yourgithubusername">
+          Find Code 👉 GitHub
+        </a>
       </div>
     </div>
   );
